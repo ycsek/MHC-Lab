@@ -1,7 +1,11 @@
 \contentsline {section}{\numberline {1}PyTorch}{3}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Introduction -- What is PyTorch?}{3}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}Why PyTorch?}{3}{subsection.1.2}%
+<<<<<<< HEAD
 \contentsline {section}{\numberline {2}PyTroch's basic functions}{4}{section.2}%
+=======
+\contentsline {section}{\numberline {2}PyToch's basic functions}{4}{section.2}%
+>>>>>>> 08d47205faa9d63a65dd73229defcd7651bb13ed
 \contentsline {subsection}{\numberline {2.1}Tensor}{4}{subsection.2.1}%
 \contentsline {subsubsection}{\numberline {2.1.1}What is Tensor?}{4}{subsubsection.2.1.1}%
 \contentsline {subsubsection}{\numberline {2.1.2}Tensor in PyTorch}{4}{subsubsection.2.1.2}%

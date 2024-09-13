@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.13)  13 SEP 2024 20:49
+=======
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.13)  13 SEP 2024 19:50
+>>>>>>> 08d47205faa9d63a65dd73229defcd7651bb13ed
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -969,7 +973,11 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
+<<<<<<< HEAD
 (rerunfilecheck)             Checksum: 77CCE61933D281A27ADCB0F9C000C2EB;4506.
+=======
+(rerunfilecheck)             Checksum: 3E9302B262C7BAB9DAEA9712FFF4AB26;4501.
+>>>>>>> 08d47205faa9d63a65dd73229defcd7651bb13ed
  ) 
 Here is how much of TeX's memory you used:
  27578 strings out of 474773
