@@ -3,7 +3,7 @@ Author: Yuchen Shi
 Date: 20-09-2024 09:26:31
 Last Editors: Jason Shi
 Contact Last Editors: Jasonycshi@outlook.com
-LastEditTime: 20-09-2024 11:18:00
+LastEditTime: 22-09-2024 14:34:06
 '''
 import torch
 import torch.nn as nn
@@ -20,6 +20,7 @@ from torchvision.utils import save_image
 
 # Device configuration
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+print(f"Using {device} device.")
 
 # Hyperparameters
 num_epochs = 20
@@ -114,7 +115,7 @@ for epoch in range(num_epochs):
 
 # Data Visualization
 # Plot the training history
-plt.figure(figsize=(12, 4))
+plt.figure(figsize=(12, 8))
 
 plt.subplot(1, 2, 1)
 plt.plot(train_losses, label='Training Loss')
@@ -142,7 +143,7 @@ with torch.no_grad():
     example_data = example_data.to(device)
     output = model(example_data)
 
-fig = plt.figure(figsize=(10, 10))
+fig = plt.figure(figsize=(12, 12))
 for i in range(40):
     plt.subplot(5, 8, i + 1)
     plt.xticks([])
@@ -153,30 +154,22 @@ for i in range(40):
                output.argmax(dim=1)[i].item()}")
 plt.show()
 
-
-# Save the model checkpoint
-torch.save(model.state_dict(), 'simple_nn.ckpt')
-
-# Save the training history
-np.save('train_losses.npy', np.array(train_losses))
-np.save('val_losses.npy', np.array(val_losses))
-
 # Save the sample image
-fig.savefig('sample.png')
+fig.savefig('sample_1.png')
 plt.close(fig)
 
 # Save the training history plot
-plt.figure(figsize=(12, 4))
+plt.figure(figsize=(12, 8))
 plt.plot(train_losses, label='Training Loss')
 plt.plot(val_losses, label='Validation Loss')
 plt.xlabel('Epoch')
 plt.ylabel('Loss')
 plt.legend(loc='upper right')
 plt.title('Model Loss')
-plt.savefig('loss.png')
+plt.savefig('loss_CE.png')
 plt.close()
 
-print("Model, training history, and sample image saved.")
+print("Done.")
 
 
 
